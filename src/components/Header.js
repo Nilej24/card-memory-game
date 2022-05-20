@@ -1,4 +1,4 @@
-function Header({ score, highScore }) {
+function Header({ scores }) {
   return(
     <header>
       <div className="left">
@@ -6,8 +6,8 @@ function Header({ score, highScore }) {
         <p>click each image once...</p>
       </div>
       <div className="right">
-        <p>current score: {score}</p>
-        <p>high score: {highScore}</p>
+        <p>current score: {scores.score}</p>
+        <p>high score: {scores.highScore}</p>
       </div>
     </header>
   );
