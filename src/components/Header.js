@@ -1,4 +1,4 @@
-function Header(props) {
+function Header({ score, highScore }) {
   return(
     <header>
       <div className="left">
@@ -6,8 +6,8 @@ function Header(props) {
         <p>click each image once...</p>
       </div>
       <div className="right">
-        <p>current score: {props.score}</p>
-        <p>high score: {props.highScore}</p>
+        <p>current score: {score}</p>
+        <p>high score: {highScore}</p>
       </div>
     </header>
   );
